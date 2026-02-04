@@ -15,15 +15,16 @@
 
 ## Dataset <a name="dataset"></a>
 
+- The dataset consists of my running data collected from March 2025 to February 1, 2026.
 - Runs data recorded by [Strava](https://www.strava.com/)  
-  (you can follow my [Strava account](https://www.strava.com/athletes/162589028))
+  (you can follow my [Strava account](https://www.strava.com/athletes/162589028)).
 
 - **Significance of the features:**
-  - **km1 – km5**: running time per kilometer
-  - **kcal**: calories burned
-  - **total**: total running time for 5 kilometers
-  - **day**: date of the run
-  - **daydiff**: elapsed time relative to the previous run
+  - **km1 – km5**: running time per kilometer.
+  - **kcal**: calories burned.
+  - **total**: total running time for 5 kilometers.
+  - **day**: date of the run.
+  - **daydiff**: elapsed time relative to the previous run.
 
 - **Example dataset:**
 
@@ -68,7 +69,7 @@
 
 ---
 
-### 4. Softmax Regression
+### 4. Principal Component Analysis (PCA) with Support Vector Machine (SVM)
 
 - Classify running sessions using:
   - total time
@@ -90,4 +91,15 @@
 
 <p align="center">
   <img width="508" height="320" src="./assets/GNB.png">
+</p>
+---
+
+### 5. Principal Component Analysis (PCA) with Support Vector Machine (SVM)
+
+- PCA reduces the original running features into two principal components to remove correlation and simplify the data.
+
+- SVM uses the PCA-transformed data to learn a clear decision boundary between good and bad 5km running sessions.
+
+<p align="center">
+  <img width="508" height="320" src="./assets/PCA-SVM.png">
 </p>
